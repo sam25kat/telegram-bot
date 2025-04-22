@@ -4,7 +4,7 @@ import os
 
 TOKEN = os.getenv("TOKEN")
 
-FLAG = "Honoured to deliver you the flag master - 'BIRBAL'"
+FLAG = "Honoured to deliver you the flag master - 'Hedwig'"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(FLAG)
