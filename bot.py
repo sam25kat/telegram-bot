@@ -1,7 +1,9 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, filters, ContextTypes
+import os
 
-TOKEN = "7698457313:AAEM3lQWMZ7jtwFUuXpxNGdNoUuFOHg3iq4"
+TOKEN = os.getenv("TOKEN")
+
 FLAG = "Honoured to deliver you the flag master - 'BIRBAL'"
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
